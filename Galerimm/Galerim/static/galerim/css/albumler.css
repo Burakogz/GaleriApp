@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(191,199,116,0.5);
+}
+.border-end{
+    border-color:darkgray !important;
+}
+.album-divider {
+    border-bottom: 2px solid darkgray;
+    margin-bottom: 5px; 
+    padding-bottom: 5px; 
+}
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; 
+}

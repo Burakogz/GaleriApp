@@ -1,0 +1,10 @@
+.navbar-text .opacity-25 {
+    opacity: 1 !important;
+}
+body {
+    background-image: url('/static/img/background2.jpg');
+    background-size: 120%;
+    background-repeat: no-repeat; 
+    
+
+}

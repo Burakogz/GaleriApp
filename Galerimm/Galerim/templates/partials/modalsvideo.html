@@ -1,0 +1,11 @@
+{% load static %}
+
+<div class="row">
+    {% for i in "123456789" %}
+        <div class="col-md-4">
+            <video controls  width="250" >
+                <source src="{% static '' %}">
+            </video>
+        </div>
+    {% endfor %}
+</div>

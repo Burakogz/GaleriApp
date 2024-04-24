@@ -1,0 +1,29 @@
+{% load static %}
+
+<div class="row">
+    {% with modals="1,2,3,4,5,6789" %}
+        {% for i in modals %}
+            <div class="col-md-1">
+                <p><!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary-emphasis" data-bs-toggle="modal" data-bs-target="#exampleModali1{{ i }}">
+                        <img src="{% static 'img/photo.jpg' %}" alt="" width="80">
+                    </button>
+                </p>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModali1{{ i }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="{% static 'img/photo.jpg' %}" alt="" width="470">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endwith %}
+</div>
